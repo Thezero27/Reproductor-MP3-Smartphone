@@ -1,8 +1,8 @@
 //Declaración variables - arreglos
-let albumes = ["img/song1.png", "img/song2.png", "img/song3.png", "img/song4.png", "img/song5.png", "img/song6.png", "img/song7.png"];
-let canciones = ["media/song1.mp3", "media/song2.mp3", "media/song3.mp3", "media/song4.mp3", "media/song5.mp3", "media/song6.mp3", "media/song7.mp3"];
-let nombres = ["Dance Monkey", "You Can't Change Me", "Sweet Child of Mine", "Nothing Else Matters", "Levitating", "De Musica Ligera", "Believer"];
-let artistas = ["Tones and I", "Don Diablo", "Guns'n Roses", "Metallica", "Dua Lipa", "Soda Stereo", "Imagine Dragons"];
+let albumes = ["img/song1.png", "img/song2.png", "img/song3.png", "img/song4.png", "img/song5.png", "img/song6.png", "img/song7.png", "img/song8.png"];
+let canciones = ["media/song1.mp3", "media/song2.mp3", "media/song3.mp3", "media/song4.mp3", "media/song5.mp3", "media/song6.mp3", "media/song7.mp3", "media/song8.mp3"];
+let nombres = ["Dance Monkey", "You Can't Change Me", "Sweet Child of Mine", "Nothing Else Matters", "Levitating", "De Musica Ligera", "Believer", "Yepeta"];
+let artistas = ["Tones and I", "Don Diablo", "Guns'n Roses", "Metallica", "Dua Lipa", "Soda Stereo", "Imagine Dragons", "Chimbombos"];
 
 var cont = 0;
 var reproducir = false;
@@ -46,13 +46,13 @@ $(document).ready(function () {
 
     //Botón de Siguiente
     $("#next").click( () => {
-        if(cont <= 6){
+        if(cont <= 7){
             cont++;
             RecorrerArray();
             Reproducir();
             Reproduciendo();
 
-            if(cont==7){
+            if(cont==8){
                 cont=0;
                 RecorrerArray();
                 Reproducir();
@@ -70,7 +70,7 @@ $(document).ready(function () {
             Reproduciendo();
 
             if(cont<0){
-                cont=6;
+                cont=7;
                 RecorrerArray();
                 Reproducir();
                 Reproduciendo();
