@@ -95,3 +95,26 @@ function Reproducir() {
 function Pausar() {
     audio.pause();
 }
+
+//Quien es Thezero?
+var nameAutor = document.getElementById("autor-name-link")
+var autor2 = "Miguel Angel Fabian"
+
+
+
+nameAutor.onclick = function (){
+    //alert(autor2)
+    $("#autor-name-link").html("<spanp class='autor-name'>Miguel Angel Fabian</span>")
+    nameAutor.onclick = function (){
+        $("#autor-name-link").html("<spanp class='autor-name'>Thezero</span>")
+        nameAutor.onclick = function (){
+            $("#autor-name-link").html("<spanp class='autor-name'>Miguel Angel Fabian</span>")
+            nameAutor.onclick = function (){
+                $("#autor-name-link").html("<spanp class='autor-name'>Thezero</span>")
+                nameAutor.onclick = function (){
+                    $("#autor-name-link").html("<spanp class='autor-name'>Ya basta de webadas!</span>")
+                } 
+            }
+        }
+    }
+}

@@ -26,7 +26,7 @@ body{
     background-image: url(../img/fondo.png);
     background-size: 100% 100%;
     font-size: 2vh;
-    display: flex;
+    display: block;
 }
 
 /*=====REPRODUCTOR DE MÚSICA=====*/
@@ -79,4 +79,20 @@ body{
     padding-left: 6px; 
     width: 8vh; height: 8vh;
     /*65px*/
+}
+.autor{
+    font-size: 2vh;
+    width: 5vh;
+    display: inline;
+    margin: 20px;
+}
+.autor-title{
+    color: #f70707cc;
+}
+.autor-name{
+    color: #161616;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.autor-name-link{
+    text-decoration: none;
 }
